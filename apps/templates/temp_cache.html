@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>{{ now }}</p>
+{#设置超时时间#}
+{% cache 20 %}
+    <p>{{ now }}</p>
+{% endcache %}
+
+</body>
+</html>
